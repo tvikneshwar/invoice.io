@@ -1,0 +1,194 @@
+body {
+  background: linear-gradient(to right, #ff5f6d, #ffc371);
+}
+
+.main-content {
+  min-height: 100vh;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media print {
+  .main-content {
+    align-items: flex-start;
+  }
+}
+
+#invoice-app {
+  background-color: #faebd7;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+@media (min-width: 761px) {
+  .header {
+    display: flex;
+  }
+}
+@media (min-width: 761px) {
+  .header > div:nth-child(-n+1) {
+    order: 1;
+    flex: 1;
+    text-align: right;
+    padding-left: 1rem;
+  }
+}
+
+.section-spacer {
+  margin: 1rem 0;
+}
+
+input, select, textarea {
+  background-color: rgba(255, 255, 255, 0.3);
+  border: none;
+  display: inline-block;
+  transition: background-color 0.3s ease-in-out;
+  width: 100%;
+}
+input:focus, select:focus, textarea:focus {
+  outline-color: #ffc371;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+input:hover, select:hover, textarea:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+@media print {
+  input, select, textarea {
+    background-color: transparent;
+  }
+}
+@media only screen and (min-width: 761px) {
+  input, select, textarea {
+    width: auto;
+  }
+}
+
+textarea {
+  width: 100%;
+  min-height: 80px;
+}
+
+@media only screen and (max-width: 760px) {
+  select {
+    width: 100%;
+  }
+}
+@media print {
+  select {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+  }
+}
+
+.company-name {
+  font-size: 2rem;
+}
+
+table {
+  width: auto;
+  border-collapse: collapse;
+  margin: 2rem 0;
+}
+table thead th {
+  padding: 0.5rem 1rem;
+}
+table thead th:nth-child(-n+1) {
+  padding-left: 0;
+}
+table thead th:nth-last-child(-n+1) {
+  padding-right: 0;
+}
+table tr {
+  border-bottom: 1px solid #f4d4aa;
+}
+table tr td {
+  padding: 0.5rem 1rem;
+}
+table tr td:nth-child(-n+1) {
+  padding-left: 0;
+}
+table tr td:nth-last-child(-n+1) {
+  padding-right: 0;
+}
+table tr td input {
+  width: 100%;
+}
+table tr td .cell-with-input {
+  display: flex;
+}
+table tr td .cell-with-input input {
+  margin: 0 0.2rem;
+}
+
+.responsive-table {
+  width: 100%;
+}
+@media only screen and (max-width: 760px) {
+  .responsive-table table, .responsive-table thead, .responsive-table tbody, .responsive-table th, .responsive-table td, .responsive-table tr {
+    display: block;
+  }
+  .responsive-table thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  .responsive-table tr {
+    padding: 2rem 0;
+  }
+  .responsive-table td[data-label] {
+    position: relative;
+    padding-left: 40%;
+    display: flex;
+    align-items: center;
+  }
+  .responsive-table td[data-label]:before {
+    content: attr(data-label);
+    position: absolute;
+    top: 0.5rem;
+    left: 0;
+    width: 35%;
+    padding-right: 10px;
+    white-space: nowrap;
+    font-weight: bold;
+  }
+}
+
+button {
+  background-color: #81cf71;
+  border: none;
+  border-radius: 100px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+button:focus {
+  outline-color: #ffc371;
+  background-color: #69c656;
+}
+button:hover {
+  background-color: #70c95e;
+}
+@media print {
+  button {
+    display: none;
+  }
+}
+button.is-danger {
+  background-color: #ff5f6d;
+}
+button.is-danger:focus {
+  background-color: #ff3b4c;
+}
+button.is-danger:hover {
+  background-color: #ff4656;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-bold {
+  font-weight: bold;
+}
