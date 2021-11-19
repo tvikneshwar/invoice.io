@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Rubik:400,500,700');
+/*
+font-family: 'Rubik', sans-serif;
+font-family: 'Roboto Slab', serif;
+*/
+*{
+	font-family: 'Rubik', sans-serif !important;
+}
+
+.slide-down-enter,
+.slide-down-leave
+{
+    -webkit-transition:200ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -moz-transition:200ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -ms-transition:200ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -o-transition:200ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    transition:200ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    display:block;
+    overflow:hidden;
+    position:relative;
+}
+
+.items-table .row {
+  border-bottom:1px solid #ddd;
+  line-height:3em;
+}
+.items-table .row:last-child {
+  border-bottom:none;
+  line-height:2em;
+}
+
+.slide-down-enter.slide-down-enter-active,
+.slide-down-leave {
+    opacity:1;
+    height:46px;
+}
+
+.slide-down-leave.slide-down-leave-active,
+.slide-down-enter {
+    opacity:0;
+    height:0px;
+}
+
+
+.invoice-number-container * {
+  font-weight:400;
+}
+
+.items-table .row:nth-child(even) {
+  background:#f9f9f9;
+}
+.items-table input {
+  line-height:1.5em;
+}
+.actions {
+  padding-top:1em;
+}
+input:focus {
+  outline: 0;
+}
+.col-xs-5.input-container input {
+    width: 50%;
+}
+.heading {
+  background-color:#357EBD;
+  color:#FFF;
+  margin-bottom:1em;
+  text-align:center;
+  line-height:2.5em;
+}
+.branding {
+  padding-bottom:2em;
+  border-bottom:1px solid #ddd;
+}
+.logo-container {
+  text-align:right;
+}
+.infos .right {
+  text-align:right;
+}
+.infos .right input {
+  text-align:right;
+}
+.infos .input-container {
+  padding:3px 0;
+}
+
+.header.row {
+  font-weight:bold;
+  border-bottom:1px solid #ddd;
+  border-top:1px solid #ddd;
+}
+
+input, textarea{
+  border: 1px solid #FFF;
+}
+
+.container input:hover, .container textarea:hover,
+.table-striped > tbody > tr:nth-child(2n+1) > td input:hover,
+.container input:focus, .container textarea:focus,
+.table-striped > tbody > tr:nth-child(2n+1) > td input:focus{
+  border: 1px solid #CCC;
+}
+
+.table-striped > tbody > tr:nth-child(2n+1) > td input{
+    background-color: #F9F9F9;
+    border: 1px solid #F9F9F9;
+}
+
+
+.signature p {
+    font-size: 13px;
+    font-family: 'Roboto Slab', serif;
+    letter-spacing: 1px;
+    line-height: 1.4 !important;
+    margin-top: 80px;
+}
+@media print {
+    .noPrint {
+        display:none;
+    }
+    .remove-item-container{
+        visibility:hidden;
+    }
+    .add-item-container{
+        visibility:hidden;
+    }
+	* { -webkit-print-color-adjust: exact; }
+		html { background: none; padding: 0; }
+		body { box-shadow: none; margin: 0; }
+		span:empty { display: none; }
+		.add, .cut { display: none; }
+	  	.central_btn{display: none;}
+
+}
+
+
+body{
+  padding:20px;
+}
+
+.infos input{
+  width: 300px;
+}
+
+.align-right input{
+  text-align:right;
+  width: 300px;
+}
+
+div.container{
+  width: 800px;
+}
+
+#imgInp{
+  display: none;
+}
+
+.copy {
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+  width: 100%;
+  margin: 40px 0 20px 0;
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  color: #404040;
+  cursor: default;
+  line-height: 1.4em;
+}
+
+.copy .love {
+  display: inline-block;
+  position: relative;
+  color: #ce0c15;
+}
+
+
+.ui-datepicker .ui-datepicker-title span.ui-datepicker-month {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+.ui-datepicker .ui-datepicker-title span.ui-datepicker-year {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+th .ui-datepicker-week-end {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    padding-top: 12px;
+}
+.ui-datepicker table th {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+}
+.ui-datepicker td {
+    font-size: 13px;
+    font-family: 'Rubik', sans-serif;
+}
+.ui-datepicker td a.ui-state-default.ui-state-highlight.ui-state-active {
+    background: #ffffff;
+    color: #3F51B5;
+    border: 1px solid #3F51B5;
+    text-align: center;
+}
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
+    position: absolute;
+    top: -4px;
+    width: 1.8em;
+    height: 1.8em;
+}
+.ui-datepicker table thead tr th:nth-child(2) {
+    background: #F44336;
+    color: #fff;
+}
+.ui-datepicker th {
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+    border: 0;
+    border-radius: 0;
+}
+.ui-datepicker table tbody tr td:nth-child(2) a.ui-state-default {
+    border: 1px solid #f44336;
+    text-align: center;
+    background: #f44336;
+    color: #fff;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    border: 1px solid #00BCD4;
+    background: #00BCD4 50% 50% repeat-x;
+    font-weight: normal;
+    color: #ffffff;
+    text-align: center;
+}
+.ui-datepicker table th {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    background: #3c3c3c;
+    color: #fff;
+    border-right: 2px solid #fff;
+}
+.ui-datepicker .ui-datepicker-header {
+    position: relative;
+    padding: .2em 0;
+    border: none;
+    background: none;
+}
+.ui-datepicker table tbody tr a.ui-state-default.ui-state-active {
+    background: #fff !important;
+    color: #00bcd4 !important;
+}
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
+    border: none;
+    background: none;
+    font-weight: normal;
+    color: #FFC107;
+}
